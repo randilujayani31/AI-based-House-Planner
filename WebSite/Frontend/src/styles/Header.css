@@ -1,0 +1,177 @@
+<<<<<<< HEAD
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Align logo to left and nav to right */
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Logo Alignment */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: auto; /* Pushes navigation to the right */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center; /* Vertically centers items in the nav */
+}
+
+.navlinks {
+  padding-right: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Vertically center nav items */
+}
+
+nav ul li {
+  margin: 0 15px;
+  display: flex;
+  align-items: center; /* Ensure each list item is vertically centered */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* Logout Button */
+nav ul li button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+nav ul li button:hover {
+  background: #ff9900;
+  border-color: #ff9900;
+  color: black;
+  font-weight: bold;
+}
+
+/* Adjustments for Main Content */
+.main-content {
+  padding-top: 80px;
+}
+=======
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Align logo to left and nav to right */
+  align-items: center;
+  padding: 15px 25px;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(10px);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Logo Alignment */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-right: auto; /* Pushes navigation to the right */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  align-items: center; /* Vertically centers items in the nav */
+}
+
+.navlinks {
+  padding-right: 25px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Vertically center nav items */
+}
+
+nav ul li {
+  margin: 0 15px;
+  display: flex;
+  align-items: center; /* Ensure each list item is vertically centered */
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #ff9900;
+  font-weight: bold;
+}
+
+/* Logout Button */
+nav ul li button {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+nav ul li button:hover {
+  background: #ff9900;
+  border-color: #ff9900;
+  color: black;
+  font-weight: bold;
+}
+
+/* Adjustments for Main Content */
+.main-content {
+  padding-top: 80px;
+}
+>>>>>>> ad1daff77eda17853a9f5794c916f1ce5b4b3db7

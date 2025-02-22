@@ -1,0 +1,9 @@
+ALTER TABLE user_input_image  
+ADD COLUMN 2d_room_split_img LONGBLOB,  
+ADD COLUMN shape_generated_img LONGBLOB,
+ADD COLUMN input_image LONGBLOB,  
+ADD COLUMN timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+
+ALTER TABLE user_input_image  
+CHANGE COLUMN image masked_img BLOB;

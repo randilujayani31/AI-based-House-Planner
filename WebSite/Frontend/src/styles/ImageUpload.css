@@ -1,0 +1,471 @@
+<<<<<<< HEAD
+/* General Styling */
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  color: black;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: row; /* Arrange all child elements horizontally */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; /* Add spacing between containers */
+  padding: 40px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+/* Upload Title */
+/* .upload-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
+} */
+
+/* Upload Label */
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label.drag-active {
+  background-color: #e6f7ff;
+  border-color: #66ccff;
+}
+
+.upload-label .icon {
+  color: #666;
+}
+
+.upload-label span {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Image and Canvas */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: crosshair;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+/* Point Markers */
+.point-marker {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  transform: translate(-50%, -50%);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.mask-button {
+  background-color: #4CAF50;
+}
+
+.remove-point-button {
+  background-color: #f44336;
+}
+
+.remove-point-button:hover {
+  background-color: #e53935;
+}
+
+.cancel-button {
+  background-color: #2196F3;
+}
+
+.cancel-button:hover {
+  background-color: #1976D2;
+}
+
+/* Output Area */
+.output-container {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+/* .output-container img {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  object-fit: contain;
+} */
+
+.output-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(to right, #4caf50, #0a7c06);
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.generate-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.generate-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+=======
+/* General Styling */
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh;  */
+  color: black;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: row; /* Arrange all child elements horizontally */
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px; /* Add spacing between containers */
+  padding: 40px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background: #fff;
+
+}
+
+/* Upload Title */
+/* .upload-title {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #666;
+} */
+
+/* Upload Label */
+.upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.upload-label.drag-active {
+  background-color: #e6f7ff;
+  border-color: #66ccff;
+}
+
+.upload-label .icon {
+  color: #666;
+}
+
+.upload-label span {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+/* Image and Canvas */
+.image-container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.uploaded-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  cursor: crosshair;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+
+.canvas-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  border-radius: 10px;
+}
+
+/* Point Markers */
+.point-marker {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: rgb(255, 0, 0);
+  transform: translate(-50%, -50%);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.mask-button {
+  background-color: #4CAF50;
+}
+
+.remove-point-button {
+  background-color: #f44336;
+}
+
+.remove-point-button:hover {
+  background-color: #e53935;
+}
+
+.cancel-button {
+  background-color: #2196F3;
+}
+
+.cancel-button:hover {
+  background-color: #1976D2;
+}
+
+/* Output Area */
+.output-container {
+  width: 300px;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+}
+
+/* .output-container img {
+  width: 100%;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  object-fit: contain;
+} */
+
+.output-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #3498db;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+.progress-container {
+  width: 100%;
+  background: #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 10px;
+  background: linear-gradient(to right, #4caf50, #0a7c06);
+  width: 0;
+  transition: width 0.5s ease-in-out;
+}
+
+.generate-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.generate-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+>>>>>>> ad1daff77eda17853a9f5794c916f1ce5b4b3db7

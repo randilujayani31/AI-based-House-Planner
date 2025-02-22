@@ -1,0 +1,10 @@
+flask
+flask-cors
+flask-bcrypt
+flask-jwt-extended
+mysql-connector-python
+pillow
+opencv-python
+numpy
+open3d
+scikit-image

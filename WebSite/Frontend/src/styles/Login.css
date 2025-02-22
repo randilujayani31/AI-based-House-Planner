@@ -1,0 +1,233 @@
+<<<<<<< HEAD
+.login-container {
+  position: relative; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/SignInImage.jpg');
+  /* padding: 0; */
+  /* padding-left: 150px; */
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  filter: brightness(0.5); /* Adjust brightness level */
+}
+
+.login-form {
+  background: none;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px); /* Blur effect */
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.8);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mb-3 {
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.login-btn {
+  background-color: #ffae00;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #ff6600;
+}
+
+.already-have-acc {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.already-have-acc a {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+.already-have-acc a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+.toast-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #ff6600;
+}
+
+.toggle-password-btn:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+=======
+.login-container {
+  position: relative; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/SignInImage.jpg');
+  /* padding: 0; */
+  /* padding-left: 150px; */
+}
+
+.login-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: rgba(0, 0, 0, 0.3); */
+  filter: brightness(0.5); /* Adjust brightness level */
+}
+
+.login-form {
+  background: none;
+  padding: 20px;
+  border-radius: 8px;
+  width: 400px;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px); /* Blur effect */
+  box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.8);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.mb-3 {
+  margin-bottom: 10px;
+  width: 95%;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.login-btn {
+  background-color: #ffae00;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #ff6600;
+}
+
+.already-have-acc {
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.already-have-acc a {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+.already-have-acc a:hover {
+  text-decoration: underline;
+  color: #ff6600;
+}
+
+.toast-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+}
+
+.password-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #ff6600;
+}
+
+.toggle-password-btn:hover {
+  text-decoration: underline;
+  background: transparent;
+}
+>>>>>>> ad1daff77eda17853a9f5794c916f1ce5b4b3db7

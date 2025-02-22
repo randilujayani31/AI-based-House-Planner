@@ -1,0 +1,69 @@
+<<<<<<< HEAD
+.gallery-container {
+  position: relative;
+  width: 220px; /* Slightly larger than 200px */
+  height: 220px; /* Make it square */
+  margin: 0 auto;
+  background: url('../assets/SignUpImage.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: -50px; /* Position the prev button outside the image */
+}
+
+.next-button {
+  right: -50px; /* Position the next button outside the image */
+}
+=======
+.gallery-container {
+  position: relative;
+  width: 220px; /* Slightly larger than 200px */
+  height: 220px; /* Make it square */
+  margin: 0 auto;
+  background: url('../assets/SignUpImage.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.prev-button {
+  left: -50px; /* Position the prev button outside the image */
+}
+
+.next-button {
+  right: -50px; /* Position the next button outside the image */
+}
+>>>>>>> ad1daff77eda17853a9f5794c916f1ce5b4b3db7

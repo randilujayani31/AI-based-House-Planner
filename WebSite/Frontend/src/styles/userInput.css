@@ -1,0 +1,282 @@
+<<<<<<< HEAD
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+} */
+
+.user-input-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/SignUpImage.jpg");
+}
+
+.user-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send the image to the back */
+}
+
+.container {
+  max-width: 600px; /* Adjusted size */
+  padding: 20px;
+  text-align: center; /* Center-align the content */
+  background: rgba(0, 0, 0, 0.8); /* Black background with 80% opacity */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* 15px blur */
+  border-radius: 8px; /* 8px corner round */
+  margin-top: 60px; /* Margin to avoid navbar overlap */
+}
+
+h2 {
+  color: #ffffff; /* Adjusted text color for better contrast */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Adjusted text color for better contrast */
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffae00; /* Button background color */
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* Add some space between buttons */
+}
+
+button:last-child {
+  margin-right: 0; /* Remove right margin for the last button */
+}
+
+button:hover {
+  background-color: #ff6600; /* Button hover color */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: auto; /* Horizontally center the table */
+  margin-right: auto; /* Horizontally center the table */
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th,
+td {
+  padding: 8px 10px; /* Adjusted padding */
+  border: 1px solid #dee2e6;
+  text-align: left;
+  color: white;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.toast {
+  position: fixed;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.toast.show {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.toast.success {
+  background-color: #28a745;
+}
+
+.toast.error {
+  background-color: #dc3545;
+}
+.table-container {
+  max-height: 100px; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  border: 1px solid #dee2e6; /* Optional: Add border */
+=======
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+} */
+
+.user-input-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/SignUpImage.jpg");
+}
+
+.user-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Send the image to the back */
+}
+
+.container {
+  max-width: 600px; /* Adjusted size */
+  padding: 20px;
+  text-align: center; /* Center-align the content */
+  background: rgba(0, 0, 0, 0.8); /* Black background with 80% opacity */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15); /* 15px blur */
+  border-radius: 8px; /* 8px corner round */
+  margin-top: 60px; /* Margin to avoid navbar overlap */
+}
+
+h2 {
+  color: #ffffff; /* Adjusted text color for better contrast */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 40px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Adjusted text color for better contrast */
+}
+
+input[type="number"],
+select {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ffae00; /* Button background color */
+  color: rgb(0, 0, 0);
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 10px; /* Add some space between buttons */
+}
+
+button:last-child {
+  margin-right: 0; /* Remove right margin for the last button */
+}
+
+button:hover {
+  background-color: #ff6600; /* Button hover color */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-left: auto; /* Horizontally center the table */
+  margin-right: auto; /* Horizontally center the table */
+}
+
+thead {
+  background-color: #343a40;
+  color: white;
+}
+
+th,
+td {
+  padding: 8px 10px; /* Adjusted padding */
+  border: 1px solid #dee2e6;
+  text-align: left;
+  color: white;
+}
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+
+.toast {
+  position: fixed;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.toast.show {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.toast.success {
+  background-color: #28a745;
+}
+
+.toast.error {
+  background-color: #dc3545;
+}
+.table-container {
+  max-height: 100px; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+  border: 1px solid #dee2e6; /* Optional: Add border */
+>>>>>>> ad1daff77eda17853a9f5794c916f1ce5b4b3db7
+}

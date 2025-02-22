@@ -1,0 +1,200 @@
+/* Download.css */
+
+/* Main container for the page */
+.download-page-container {
+  /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #f1f1f1;
+    padding: 100px; */
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/SignInImage.jpg");
+  /* padding: 100px; */
+}
+
+.download-content {
+  width: 100%;
+  max-width: 1200px;
+  height: fit-content;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.download-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loading-text {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* .image-row-layout {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.download-image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+}
+
+.download-image-card h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+} */
+
+.image-row-layout {
+  display: flex;
+  flex-direction: column; /* Arrange the items vertically */
+  gap: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  width: 100%;
+  height: 500px; /* Set a fixed height for scrolling */
+  padding-right: 10px; /* Add some padding for better scrollbar appearance */
+}
+
+.image-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.download-image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #feddac;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 10px;
+  width: 30%;
+  min-width: 250px;
+}
+
+.download-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+.image-preview {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.image-actions {
+  margin-top: 10px;
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* .close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .close-modal:hover {
+    background-color: #d72e28;
+  } */
+
+@media (max-width: 768px) {
+  .download-heading {
+    font-size: 1.5rem;
+  }
+
+  .image-row-layout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .download-download-image-card {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .image-preview {
+    height: 120px;
+  }
+}
